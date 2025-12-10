@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/84ee39d798.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/RahulReddy.png" alt="logo"  class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>MERN Stack Developer</p>
+                <h1>Hi, I'm <span>Rahul Reddy</span><br>From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- //about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/About.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    
+                    <p>I’m a passionate Full Stack MERN Developer who loves building fast, modern, and user-friendly web applications. I specialize in creating clean UI with React + Tailwind, scalable backend systems using Node.js and Express, and database architectures powered by MongoDB  <br><br>
+
+I enjoy solving real-world problems through code and transforming ideas into working digital products. I am consistently learning new technologies like AI automations, API integrations, and backend scaling to take my development skills to the next level. <br><br>
+
+My goal is to become a high-value full-stack engineer and build meaningful digital products that create impact.</p>
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skils</p>
+                    <p class="tab-links" onclick="opentab('experience')">Development Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                   </div>
+
+                   <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span><b>Frontend Development</b></span><br>React.js, JavaScript, Tailwind CSS, Responsive UI</li>
+                        <li><span><b>Backend Development</b></span><br>Node.js, Express.js, REST APIs, Authentication</li>
+                        <li><span><b>Database Management</b></span><br>MongoDB, Mongoose, Schema Design, Aggregations</li>
+                    </ul>
+                   </div> 
+                    <div class="tab-contents" id="experience">
+                    <ul>
+                        <li>• Developed 3 production-level MERN projects: an AI-powered blog app, a full e-commerce system, and an Airbnb-style listing platform.</li>
+                        <li>• Integrated advanced features like AI content generation (Gemini), Cloudinary media storage, Stripe/Razorpay payments, MapTiler maps, JWT auth, Passport.js login, and full CRUD functionality</li>
+                        <li>• Built responsive UIs with React, Vite, and Tailwind; managed backend APIs with Express and MongoDB; and deployed fully working applications on Vercel with live databases.</li>
+                    </ul>
+                   </div> 
+                    <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span><b>B.Tech in Computer Science Engineering</b></span><br>Malla Reddy College of Engineering (2024 – 2028)</li>
+                        <li><span><b>Intermediate</b></span><br>SR Junior College (2022 – 2024)</li>
+                        <li><span><b>Schooling</b></span><br>Completed with strong interest in computers & coding</li>
+                    </ul>
+                   </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Full Stack Web Development</h2>
+                    <p>I build complete MERN applications with clean frontend, secure backend, and scalable database structures.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>Modern Landing Page Design</h2>
+                    <p>Fully responsive landing pages using React + Tailwind that load fast and look premium.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-server"></i>
+                    <h2>API & Backend Development</h2>
+                    <p>Custom APIs, authentication, form handling, data storage, and backend logic for any project.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Portfolio -->
+     <div class="" id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/project1.jpeg" alt="" >
+                    <div class="layer">
+                        <h3>QuickBlog</h3>
+                        <p>AI blog generator with Gemini AI, admin dashboard, JWT auth, and image uploads.</p>
+                        <a href="https://quickblog-opal.vercel.app/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                     <img src="images/project2.jpeg" alt="" >
+                     <div class="layer">
+                        <h3>Forever Store</h3>
+                        <p>E-commerce MERN app with Stripe/Razorpay payments, Cloudinary, admin panel, and advanced filters.</p>
+                        <a href="https://ecommerce-frontend-seven-red.vercel.app/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="images/project3.jpeg" alt="" >
+                    <div class="layer">
+                        <h3>Wanderlust</h3>
+                        <p>Airbnb-style listing platform with Passport.js auth, MapTiler maps, and complete listing management.</p>
+                        <a href="https://rahulreddy-firstproject.onrender.com/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+
+                </div>
+                   
+                    
+                
+            </div>
+            <a href="#" class="btn">See more</a>
+
+        </div>
+     </div>
+
+     <!-- Contact -->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-message"></i>kattegummularahul@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 9908569772</p>
+                    <div class="social-icons">
+                        <!-- <a href=""><i class="fa-brands fa-facebook"></i></a> -->
+                        <a href="https://www.linkedin.com/in/rahulreddy-kattegummula/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/rahulreddy006/"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                   <a href="images/resume.docx" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="Submit" class="btn btn2" id="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2025 Rahul Reddy. Designed & developed by me with <i class="fa-solid fa-heart"></i></p>
+        </div>
+      </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxvNtHCXKbwfpUBfnb6A3d5Q9_shkRGNCqk-E7wBUTofky3xofWBm0nvAy50FlJwU8/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)}).then(response =>{
+        msg.innerHTML="Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
